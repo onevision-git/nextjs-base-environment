@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
@@ -35,8 +36,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <nav className="container mx-auto flex items-center justify-between">
             <h1 className="text-2xl font-bold">Hello CRM</h1>
             <ul className="flex space-x-4">
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/about" className="hover:underline">About</a></li>
+              <li><Link href="/" className="hover:underline">Home</Link></li>
+              <li><Link href="/about" className="hover:underline">About</Link></li>
             </ul>
           </nav>
         </header>
