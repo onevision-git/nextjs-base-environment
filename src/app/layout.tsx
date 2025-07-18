@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Hello CRM',
+  title: 'Base Environment',
   description: 'Your CRM starter built with Next.js, TypeScript & TailwindCSS',
 };
 
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* Global Header */}
         <header className="bg-primary text-primary-content py-4 shadow">
           <nav className="container mx-auto flex items-center justify-between">
-            <h1 className="text-2xl font-bold">Hello CRM</h1>
+            <h1 className="text-2xl font-bold">Base Environment</h1>
             <ul className="flex space-x-4">
               <li><Link href="/" className="hover:underline">Home</Link></li>
               <li><Link href="/about" className="hover:underline">About</Link></li>
@@ -50,7 +50,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* Global Footer */}
         <footer className="bg-base-200 text-center py-4">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Hello CRM. All rights reserved.
+            &copy; {new Date().getFullYear()} Base Environment. All rights reserved.
           </p>
         </footer>
       </body>
