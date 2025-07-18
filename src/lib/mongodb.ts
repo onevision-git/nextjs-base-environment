@@ -11,7 +11,6 @@ let clientPromise: Promise<MongoClient>;
 
 // Use a global variable to preserve the client across hot reloads in development
 declare global {
-  // eslint-disable-next-line no-var
   var _mongoClientPromise: Promise<MongoClient>;
 }
 
